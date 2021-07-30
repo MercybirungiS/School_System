@@ -5,10 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      body{
+          background-color: #ebf2fd;
+      }
+      .student_reg{
+          /* text-align: center; */
+          padding: 25px;
+          background-color: #f8f8fa;
+          width: 28%;
+          border-radius: 5px;
+          margin: auto;
+         
+          
+        }
+        .submitButton{
+            background-color: #1A469A;
+            width: 30%;
+            color: white;
+            font-size: 16px;
+            font-weight: bolder;
+            padding: 15px;
+            margin: auto;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+           
+        }
+        form{
+        border-radius: 5px;
+       
+      
+        }
+        input{
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid #1A469A;
+             box-sizing: border-box;
+            border-radius: 5px;
+        }
+      
+      
+    
+    </style>
 </head>
 <body>
-    <form method="POST">
-        {{form.as_p}}
-    </form>
+    <center><h1>Student Registration</h1></center>
+    <div class="student_reg">
+    <form method="POST"> {{form.as_p}}</form>
+    <button class="submitButton">Submit</button>
+    </div>
+
 </body>
 </html>

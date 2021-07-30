@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Student(models.Model):
     first_name=models.CharField(max_length=12)
@@ -27,5 +28,7 @@ class Student(models.Model):
     email_address=models.EmailField()
     district=models.CharField(max_length=12)
     course_name=models.CharField(max_length=18)
+    
+ 
     
 
